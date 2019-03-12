@@ -1,0 +1,131 @@
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'IBM Plex Serif', serif;
+
+	line-height: 1.6;
+	color:  white;
+}
+.secondary {background-color:black; }
+.main-header {background-color:black; }
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: white;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+.hide{
+	opacity: 0;
+}
+
+
+.menu-button {width: 30px;
+				height: 30px;
+				background: #000;
+			}
+
+
+
+.menu-button div {
+	display:block;
+		width: 20px;
+		border-bottom: solid 4px #fff;
+		padding-bottom: 4px;
+	}
+
+.name {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #E4E0A9 ;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #E4E0A9;
+}
+
+.main-footer {
+	background: #E4E0A9;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.menu-button {
+		display: none;
+	
+	}
+
+	.hide {
+		opacity: 1;
+	}
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
