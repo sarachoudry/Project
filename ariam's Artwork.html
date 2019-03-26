@@ -5,88 +5,116 @@
 	<title>Mariam's Artwork</title>
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|IBM+Plex+Serif|Lato" rel="stylesheet"
 	 type='text/css'>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 	
 	<header class="main-header">
-		<h1 class="name"><a href="#">MARIAM'S ARTWORK</a></h1>
+		<h1 class="name"><a href="#">MARIAM'S ARTWORK</a></h>
 		<div class="menu-button" onclick="openMenu()">
 			<div></div>
 			<div></div>
 			<div></div>
 		</div>
-		<ul class="main-nav hide">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Artwork</a></li>
-			<li><a href="#">About Mariam</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
+		<!-- <ul class="main-nav hide">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#artwork">ARTWORK</a></li>
+			<li><a href="#aboutmariam">About Mariam</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul> -->
 	</header><!--/.main-header-->   
 
+
+	<!--scroll menu-->
+	<div class="scrollmenu hide">
+		<a href="#home">Home</a>
+		<a href="#artwork">Artwork</a>
+		<a href="#contact">Contact</a>
+		<a href="#aboutmariam">About Mariam</a>
+		
+	  </div>
+
 	<div class="banner">
-		<img class="logo" src="img/momi.JPG" alt="City">
-		<h1 class="headline">Mariam Naeem</h1>
-		<span class="secondary col">
-			<h2>Welcome!</h2>
-			</span>
+		
+		<div class="welcome">
+			<div class="left">
+				<img class="logo" src="img/momi.JPG" alt="Mariam Naeem">
+				<h1 class="headline">Mariam Naeem</h1>
+			</div>
+			<h2>Dicovering Life's Essence One Painting At A Time...</h2>
+		<div>
+			<h2> </h2>
+		</div>
+		</div>
+		
 	</div><!--/.banner-->
 	
+	<h2 ID="artwork">ARTWORK</h2>
+	
 	<div class="secondary col">
-		<h2>Artwork</h2>
-		<img class="feat-img" src="img/Behold The Stars.JPG" 
-		width="200" height="200" alt="Drinks and eats">
+		<div class= "column">
+		<img class="feat-img rounded mx-auto d-block" src="img/Behold The Stars.JPG"> 
+		<!--  width="200" height="200" alt="Behold The Stars"  -->
 		<p>Behold the Stars</p>
-		<img class="feat-img" src="img/Behold the Moon.JPG" 
-		width="200" height="200" 
-		alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Behold the Moon.JPG">
+		<!-- width="200" height="200" 
+		alt="Behold the Moon" -->
 		<p>Behold the Moon</p>
-		<img class="feat-img" src="img/Contemplation1.JPG"
-		 width="200" height="200" alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Contemplation1.JPG">
+		<!--  width="200" height="200" alt="Contemplation"> -->
 		<p>Contemplation</p>
-		<img class="feat-img" src="img/Dervishes1.JPG" 
-		 width="200" height="200"alt="Drinks and eats">
-		<p>Dervishes 1</p>
-		<img class="feat-img" src="img/Dervishes2.JPG" 
-		width="200" height="200"
-		alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Dervishes1.JPG">
+		<!--  width="200" height="200"alt="Dervishes1"> -->
+		<p>Dervishes 1</p></div>
+
+		<div class = "column">
+		<img class="feat-img rounded mx-auto d-block" src="img/Dervishes2.JPG" >
+	   <!--width="200" height="200"
+		alt="Dervishes2"> -->
 		<p>Dervishes 2</p>
-		<img class="feat-img" src="img/Moonlight (2).JPG" width="200" height="200"
-		alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Moonlight (2).JPG">
+	   <!--width="200" height="200"
+		alt="Moonlight"> -->
 		<p>Moonlight</p>
-		<img class="feat-img" 
-		src="img/Rendering Divine Blessings (3).jpg"
-		width="200" height="200" alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Rendering Divine Blessings (3).jpg">
+		<!-- width="200" height="200" alt="Rendering Devine Blessings"> -->
 		<p>Rendering Devine Blessings</p>
-		<img class="feat-img" src="img/Sema1.JPG"
-		width="200" height="200" alt="Drinks and eats">
-		<p>Sema 1</p>
-		<img class="feat-img" 
-		src="img/Sema2.JPG"
-		width="200" height="200" alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Sema1.JPG">
+		<!-- width="200" height="200" alt="Sema1"> -->
+		<p>Sema 1</p> </div>
+
+		<div class = "column">
+		<img class="feat-img rounded mx-auto d-block" src="img/Sema2.JPG">
+		<!-- width="200" height="200" alt="Sema2"> -->
 		<p>Sema 2</p>
-		<img class="feat-img" src="img/Unity.JPG"
-		width="200" height="200" alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/Unity.JPG">
+		<!-- width="200" height="200" alt="Unity"-->
 		<p>Unity</p>
-	    <img class="feat-img" src="img/Unity2 (2).jpg"
-		width="200" height="200" alt="Drinks and eats">
-		<p>Unity 2</p>
-		<img class="feat-img" src="img/Yellow Dervish.JPG"
-		width="200" height="200" alt="Drinks and eats">
+	    <img class="feat-img rounded mx-auto d-block" src="img/Unity2 (2).jpg">
+		<!-- width="200" height="200" alt="Unity2"--><p>Unity 2</p>
+		</div>
+
+		<div class="column">
+		
+		<img class="feat-img rounded mx-auto d-block" src="img/Yellow Dervish.JPG">
+		<!-- width="200" height="200" alt="Yellow Dervish" -->
 		<p>Yellow Dervish</p>
-		<img class="feat-img" src="img/derveishshadow.jpg"
-		width="200" height="200" alt="Drinks and eats">
+		<img class="feat-img rounded mx-auto d-block" src="img/derveishshadow.jpg">
+		<!-- width="200" height="200" alt="derveish Shadow"> -->
 		<p>Dervish Shadow</p>
-		<img class="feat-img" src="img/dervieshreflection.jpg"
-		width="200" height="200" alt="Drinks and eats">
-		<p>Dervish  Reflection</p>
+		<img class="feat-img rounded mx-auto d-block" src="img/dervieshreflection.jpg">
+		<!-- width="200" height="200" alt="derviesh Reflection"> -->
+		<p>Dervish  Reflection</p> </div>
 	
 	</div><!--/.secondary-->
 
 	<div class="primary col">
-			<h2>MARIAM</h2>
-			<p>introduction to Mariam and her background etc.</p>
+			<h2 id="aboutmariam">ABOUT MARIAM</h2>
+			<p>Mariam Naeem is a Pakistani-American artist . She creates artwork that attempts to portray the spiritual dimension-of man's intimate connection with the divine-through the beautiful symbolism found in the whirling of Sufi dervishes. She also loves to create Arabic calligraphy pieces with a contemporary feel. Mariam resides in San Diego with her husband and two boys. She's found her life's passion and purpose with art and hopes these paintings will bring the viewers as much joy and peace as she has found in creating them. </p>
 
 
 
@@ -95,10 +123,11 @@
 
 
 	<footer class="main-footer">
-			<h2>CONTACT MARIAM</h2>
-			<span>US: 510-465-8466</span>
+			<h2 id="contact">CONTACT MARIAM </h2>
+			<span>US: 510-465-8466</span> <br>
 			<span>EMAIL: mariam00@yahoo.com</span>
 		
+
 			
 	</footer>
 <script src="main.js"></script>	

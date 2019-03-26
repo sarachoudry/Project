@@ -1,6 +1,6 @@
 
 
-var menu = document.querySelector('.main-nav');
+var menu = document.querySelector('.scrollmenu');
 
 //opens mobile menu//
 

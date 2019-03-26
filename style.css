@@ -1,4 +1,22 @@
+/*scroll Menu*/
 
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
 
 /* ================================= 
   Base Element Styles
@@ -14,15 +32,45 @@ body {
 	line-height: 1.6;
 	color:  white;
 }
+
+.primary.col{
+	color: black;
+}
+
+.secondary.col {
+  display: flex;
+  flex-wrap: wrap;
+	padding: 0 4px;
+	flex-direction: column;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+	vertical-align: middle;
+	
+}
+
+
+
+
 .secondary {background-color:black; }
 .main-header {background-color:black; }
 
 p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
+	text-align: center;
 }
 
-h2,
+h2 {color: black;
+text-align: center;}
 h3,
 a {
 	color: white;
@@ -37,6 +85,11 @@ a {
 	text-decoration: none;
 }
 
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
 img {
 	max-width: 100%;
 }
@@ -48,12 +101,15 @@ img {
 /* ---- Navigation ---- */
 .hide{
 	opacity: 0;
+	height: 30px;
 }
 
 
-.menu-button {width: 30px;
+.menu-button {
+				width: 30px;
 				height: 30px;
-				background: #000;
+				background: black;
+				float: right;
 			}
 
 
@@ -68,6 +124,7 @@ img {
 .name {
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.25em;
+	padding: 20px 10px;
 }
 
 .name a,
@@ -82,26 +139,68 @@ img {
 }
 
 .main-nav a:hover {
-	color: #093a58;
+	color: white;
 }
 
 /* ---- Layout Containers ---- */
 
 .banner {
-	color: #fff;
+	color: black;
 	background: #E4E0A9;
 }
+ .banner h2 {color: brown;}
+ 
+ .banner .secondary {background-color: transparent; }
+ .welcome {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: WRAP;
+	padding: 30px 0;
+	/* display: table; */
+
+	width: 80%;
+	margin:0 auto;
+	}
+	.welcome h1{
+		width: 100%;
+		text-align: center;
+	}
+	.welcome h2{
+		text-align: center;
+		flex-grow: 1;
+		display: table-cell;
+	vertical-align: middle;
+	width:100%;
+		}
+
+	.left{
+		display: table-cell;
+	vertical-align: middle;
+	width:100%;
+	}
+
+		.Artwork h2 {
+			text-align: center;
+		}
+
+
+
+
 
 .main-footer {
+	text-align: center;
 	background: #E4E0A9;
 	padding: 2em 0;
 	margin-top: 30px;
+	color: black;
 }
+
+.main-footer h2 {color:black;}
 
 /* ---- Page Elements ---- */
 
 .logo {
-	width: 190px;
+	width: 100%;
 }
 
 /* ================================= 
@@ -111,14 +210,43 @@ img {
 @media (min-width: 769px) {
 	.menu-button {
 		display: none;
-	
 	}
 
 	.hide {
 		opacity: 1;
+		height: 60px;
 	}
 
+	.secondary.col {
+		flex-direction: row;
+	}
 
+	.logo {
+		width: 190px;
+	}
+
+	.welcome {
+		display: table;
+	}
+
+	.welcome h1{
+		text-align: initial;
+	}
+
+	.left {
+		width: 50%;
+	}
+}
+	
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
 
 	/* ---- Float clearfix ---- */
 
@@ -128,4 +256,3 @@ img {
 		clear: both;
 	}
 
-}
